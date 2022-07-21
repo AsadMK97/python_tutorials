@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <information>
+		<owner>Robb Stark</owner>
+			<direwolf>Grey Wind</direwolf>
+				<status>Deceased</status>
+    </information>
+	
+	<information>
+		<owner>Sansa Stark</owner>
+			<direwolf>Lady</direwolf>
+				<status>Deceased</status>
+	</information>
+	
+	<information>
+		<owner>Arya Stark</owner>
+			<direwolf>Nymeria</direwolf>
+				<status>Living</status>
+	</information>
+	
+	<information>
+		<owner>Bran Stark</owner>
+			<direwolf>Summer</direwolf>
+				<status>Deceased</status>
+	</information>
+	
+	<information>
+		<owner>Rickon Stark</owner>
+			<direwolf>Shaggydog</direwolf>
+				<status>Deceased</status>
+	</information>
+
+	<information>
+		<owner>Jon Snow</owner>
+			<direwolf>Ghost</direwolf>
+				<status>Deceased</status>
+	</information>
+</root>
