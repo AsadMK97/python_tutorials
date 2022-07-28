@@ -1,21 +1,8 @@
 
-class cat:
+class Cat:
+
+    def __init__(self, cat):
+        self.cat = cat
     
     def meow(self):
-        print("meow")
-
-
-
-class GoodCat(cat):
-    def meow(self):
-        print("purr purr")
-
-
-class BadCat(cat):
-    def meow(self):
-        print("hiss")
-
-
-c = cat()
-
-c.meow()
+        print("Hello there", self.cat)
