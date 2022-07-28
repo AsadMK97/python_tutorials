@@ -1,8 +1,22 @@
 
 class Cat:
 
-    def __init__(self, cat):
-        self.cat = cat
+    def __init__(cat):
+        cat = cat
+    
+    def meow():
+        print("Meow")
+    
+
+
+class BadCat(Cat):
     
     def meow(self):
-        print("Hello there", self.cat)
+        print("Hiss")
+
+
+
+class GoodCat(Cat):
+
+    def meow(self):        
+        print("Purr purr Meow")

@@ -1,4 +1,11 @@
-from cat import Cat
+from cat import Cat, BadCat, GoodCat
 
-cat: Cat = Cat("Meow")
+
+print('good cats go')
+cat: Cat = GoodCat()
+cat.meow()
+
+
+print('bad cats go')
+cat: Cat = BadCat ()
 cat.meow()
