@@ -1,11 +1,15 @@
-from cat import Cat, BadCat, GoodCat
+from cat import Cat, BadCat, GoodCat, VeryBadCat, cat_cage
 
 
-print('good cats go')
-cat: Cat = GoodCat()
-cat.meow()
+print('very bad cats need cages')
 
+cat1: Cat = GoodCat()
+cat2: Cat = BadCat ()
+cat3: Cat = VeryBadCat()
 
-print('bad cats go')
-cat: Cat = BadCat ()
-cat.meow()
+@cat_cage
+def run_in_cage ():
+    cat1.meow()
+    cat2.meow()
+    cat3.meow()
+run_in_cage()
