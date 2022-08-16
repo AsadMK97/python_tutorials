@@ -1,0 +1,17 @@
+import json, csv
+
+
+with open('data_tutorial\input.csv', 'r') as file:
+    csv_reader = csv.reader(file)
+    next(csv_reader)
+    data = []
+    for row in csv_reader:
+        data.append({"Name":
+        row[0], "Location": 
+        row[1], "First Villain": row[2]})
+
+
+with open("data_tutorial/output.json", "w") as f:
+    json.dump(data, f, indent=4)
+
+print("Successs!")

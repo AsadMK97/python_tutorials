@@ -1,5 +1,4 @@
-import json
-import csv
+import json, csv
 
 
 
@@ -8,16 +7,14 @@ with open("data_tutorial/input.json", "r") as json_file:
 
 
 
-
-data_file = open('data_tutorial\output.csv', 'w', newline='')
-csv_writer = csv.writer(data_file)
-
-count = 0
-for data in json_data:
-    if count == 0:
-        header = data.keys()
-        csv_writer.writerow(header)
-        count += 1
-    csv_writer.writerow(data.values())
- 
-data_file.close()
+with open('data_tutorial\output.csv', 'w', newline='') as file:
+    csv_writer = csv.writer(file)
+    count = 0
+    for data in json_data:
+        if count == 0:
+            header = data.keys()
+            csv_writer.writerow(header)
+            count += 1
+        csv_writer.writerow(data.values())
+    
+print("Success!")
