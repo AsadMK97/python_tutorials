@@ -1,0 +1,11 @@
+import json
+
+with open("data_tutorial/input.json") as json_file:
+    json_data = json.loads(json_file)
+
+    
+print(json_data)
+
+print(json.dumps(json_data))
+
+print(json.dumps(json_data, indent=1))
