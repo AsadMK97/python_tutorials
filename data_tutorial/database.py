@@ -1,3 +1,7 @@
+#/usr/bin/python2.4
+#
+#
+
 import psycopg2
 
 # Try to connect
@@ -5,10 +9,10 @@ import psycopg2
 try:
     conn = psycopg2.connect("dbname='template1' user='dbuser' password='mypass'")
 except:
-    print("I am unable to connect to the database.")
-
+    print ("I am unable to connect to the database.")
+    
 cur = conn.cursor()
 try:
     cur.execute("""DROP DATABASE foo_test""")
 except:
-    print("I can't drop our test database!")
+    print ("I can't drop our test database!")
