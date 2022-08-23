@@ -2,10 +2,10 @@
 import sys
 
 
-first_input =(sys.argv[1])
+first_input = sys.argv[1]
 
 
-print (first_input)
+print(first_input)
 
-#print ('Number of Arguments: ', len(sys.argv), 'arguments.')
-#print ('Argument List: ', (str(sys.argv)))
+# print ('Number of Arguments: ', len(sys.argv), 'arguments.')
+# print ('Argument List: ', (str(sys.argv)))

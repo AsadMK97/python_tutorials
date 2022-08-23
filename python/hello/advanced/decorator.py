@@ -3,14 +3,16 @@ def check(func):
         if b == 0:
             print("Can't divide by 0")
             return
-        func(a,b)
+        func(a, b)
+
     return inside
 
 
 @check
 def div(a, b):
-        return a / b
-    
-#div = check(div)
+    return a / b
 
-print(div(10,0))
+
+# div = check(div)
+
+print(div(10, 0))

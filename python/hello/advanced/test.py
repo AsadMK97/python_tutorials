@@ -1,4 +1,3 @@
-
 class Robot:
     """Represents a robot, with a name."""
 
@@ -23,8 +22,7 @@ class Robot:
         if Robot.population == 0:
             print("{} was the last one.".format(self.name))
         else:
-            print("There are still {:d} robots working.".format(
-                Robot.population))
+            print("There are still {:d} robots working.".format(Robot.population))
 
     def say_hi(self):
         """Greeting by the robot.
