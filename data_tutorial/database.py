@@ -1,18 +1,14 @@
-#!/usr/bin/python2.4
-#
-# Small script to show PostgreSQL and Pyscopg together
-#
 import psycopg2
 
+# Try to connect
 
-# Connect to your postgres DB
-conn = psycopg2.connect("dbname=test user=postgres")
-
-# Open a cursor to perform database operations
+try:
+    conn=psycopg2.connect("dbname='template1' user='dbuser' password='mypass'")
+except:
+    print ("I am unable to connect to the database.")
+    
 cur = conn.cursor()
-
-# Execute a query
-cur.execute("SELECT * FROM my_data")
-
-# Retrieve query results
-records = cur.fetchall()
+try:
+    cur.execute("""DROP DATABASE foo_test""")
+except:
+    print ("I can't drop our test database!")
