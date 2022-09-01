@@ -3,7 +3,7 @@ def fibonacci():
     num2 = 1
     find = 2
     fibnum = 0
-    endnum = 10
+    endnum = 3
 
     while find <= endnum:
         fibnum = num1 + num2
