@@ -3,9 +3,9 @@ def fibonacci():
     num2 = 1
     find = 2
     fibnum = 0
-    endnum = 3
+    endnum = user_input
 
-    while find <= endnum:
+    while find <= int(endnum):
         fibnum = num1 + num2
         num1 = num2
         num2 = fibnum
@@ -14,6 +14,6 @@ def fibonacci():
     print(fibnum)
 
 
-# user_input = input("Enter a number: ")
+user_input = input("Enter a number: ")
 # fibnum = fibonacci(user_input)
 fibonacci()

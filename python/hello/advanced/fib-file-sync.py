@@ -21,4 +21,4 @@ def text_creator():
         file.write(str(fibnum))
 
 
-text_creator()
+# text_creator()
